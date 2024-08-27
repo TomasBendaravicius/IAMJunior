@@ -1,0 +1,131 @@
+$primary-color: orange;
+$secondary-color: blue;
+
+body {
+  //background-color: $secondary-color;
+  font-family: Arial, sans-serif;
+}
+
+@mixin box-shadow($x, $y, $blur, $color) {
+  -webkit-box-shadow: $x $y $blur $color;
+  -moz-box-shadow: $x $y $blur $color;
+  box-shadow: $x $y $blur $color;
+}
+
+button {
+  @include box-shadow(2px, 2px, 4px, rgba(0, 0, 0, 0.5));
+  background-color: $primary-color;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+nav {
+  background-color: $primary-color;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: $secondary-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Loop Task
+
+$themes: dark, light;
+
+@each $theme in $themes {
+  body.#{$theme}-theme {
+    @if $theme == dark {
+      color: white;
+      background-color: black;
+    } @else if $theme == light {
+      color: black;
+      background-color: white;
+    }
+  }
+}
+
+// Mixin Task
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == phone {
+    @media (min-width: 480px) { @content; }
+  } @else if $breakpoint == tablet {
+    @media (min-width: 768px) { @content; }
+  } @else if $breakpoint == desktop {
+    @media (min-width: 1024px) { @content; }
+  }
+}
+
+p {
+  color: $primary-color;
+
+  @include responsive(phone) {
+    font-size: 16px;
+  }
+
+  @include responsive(tablet) {
+    font-size: 26px;
+  }
+
+  @include responsive(desktop) {
+    font-size: 36px;
+  }
+}
+
+// Calculate border-radius
+
+@function calculate-radius($width, $height) {
+  @return ($width + $height) * 0.1;
+}
+
+@mixin padmarcol() {
+    padding: 20px;
+    margin: 10px;
+    color: white;
+}
+
+@mixin apply-radius($width, $height) {
+  border-radius: calculate-radius($width, $height);
+}
+
+.klase1 {
+  @include apply-radius(100px, 50px);
+  background-color: $primary-color;
+  @include padmarcol();
+}
+
+.klase2 {
+  @include apply-radius(150px, 75px);
+  background-color: $secondary-color;
+  @include padmarcol();
+}
+
+.klase3 {
+  @include apply-radius(200px, 100px);
+  background-color: $primary-color;
+  @include padmarcol();
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tomo puslapis</title>
+</head>
+
+<body>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+
+
+
+        <header>
+
+            <nav>
+                <h1 class="antraste"><a href="index.html">ŠEIMOS PUSLAPIS</h1></a>
+                <ul class="vardai">
+                    <li class="button"><a href="Ana.html">Ana</a< /li>
+                    <li class="button"><a href="tetis.html">Tėtis</a></li>
+                    <li class="button"><a href="Gabrielius.html">Gabrielius</a></li>
+                    <li class="button"><a href="mama.html">Mama</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="ivestis">
+            <div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <label for="name">Vardas</label>
+                <input type="text" name="name" id="name" placeholder="Vardas" required>
+            </div>
+            <div>
+                <label for="email">el.pastas</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="age">Amzius</label>
+                <input type="number" name="age" id="age" min="1" max="100" step="1">
+            </div>
+            <br>
+            <div>
+                Lytis
+                <div>
+                    <label for="male">Vyras</label>
+                    <input type="radio" name="gender" id="male" value="female">
+                </div>
+                <div>
+                    <label for="female">Moteris</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                </div>
+                <br>
+                <div>
+                    <label for="eyeColor"> Akiu spalva</label>
+                    <select name="eyeColor" id="eyeColor">
+                        <option value="Green">Zalios</option>
+                        <option label="Red" value="Red">Raudonos</option>
+                        <option value="Black">Juogos</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label for="date">Gimtadienis</label>
+                <input type="date" name="date" id="date" min="1950-01-01">
+            </div>
+            <div>
+                Mylimiausias maistas
+                <div>
+                    <label for="bananas">Bananas</label>
+                    <input type="checkbox" name="bananas" id="bananas">
+                </div>
+                <div>
+                    <label for="obuolys"> Obuolys </label>
+                    <input type="checkbox" name="obuolys" id="obuolys">
+                </div>
+                <div>
+                    <label for="Sokoladas">Sokoladas</label>
+                    <input type="checkbox" name="Sokoladas" id="Sokoladas">
+                </div>
+                <div>
+                    <label for="color">Megstamiausia spalva</label>
+                    <input type="color" name="color" id="color">
+                </div>
+            </div>
+            <div>
+                <label for="bio">Tekstas atsiliepimui</label>
+                <textarea name="bio" id="bio">Parasyk atsiliepima</textarea>
+            </div>
+            <div>
+                <label for="pasword">Slaptažodis</label id="pasword">
+                <input type="password" name="password" placeholder="slaptazodis" required>
+            </div>
+            <div>
+                <label for="phone"> Telefonas</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div>
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url">
+            </div>
+            <div>
+                <label for="file">File</label>
+                <input type="file" name="file" id="file">
+            </div>
+            <br>
+            <div>
+                <button type="reset">istrinti</button>
+                <button type="submit">Ivesti</button>
+            </div>
+            
+        </div>
+    </form>
+    <main>
+
+        <img src="tetis.JPEG" alt="nėra fotkės">
+        <h4>Visada linksmas</h4>
+        <img src="ana.jpg" alt="nėra fotkės">
+        <h4>Saulelydis Jurmaloje su dviraciu</h4>
+        <img src="irina.jpg" alt="nėra fotkės">
+        <h4>Latvijos pajuryje</h4>
+        <img src="Gabrielius.jpg" alt="nėra fotkės">
+        <h4>Zvejys profisionalas</h4>
+        <div>
+            <h2 class="pirmas">Visos nuotraukos bendrai</h2>
+            <p>Skirtingi paveiksliukai</p>
+        </div>
+
+    </main>
+    <footer class="kontaktai">
+        <h3>Seimos kontaktai</h3>
+        <p>Salis: Lietuva</p>
+        <br>
+        <p>Miestas: Vilnius</p>
+        <br>
+        <p>Gyvenviete: Traku Voke</p>
+    </footer>
+
+</body>
+
+</html>

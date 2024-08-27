@@ -1,0 +1,22 @@
+$primary-color: #ff6a3e;
+$secondary-color: #a3d0db;
+
+@mixin backgroumd-color ($padding-margin, $main-color, $secondary-color)
+{
+  background-color: $main-color;
+  padding: $padding-margin;
+  margin: $padding-margin;
+  border: 1px solid $secondary-color;
+}
+.katinas {
+  @include backgroumd-color(20px, $primary-color, rgb(198, 51, 51));
+  // color: $primary-color;
+
+}
+.conteiner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: $secondary-color;
+
+}

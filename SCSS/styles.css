@@ -1,0 +1,13 @@
+.katinas {
+  background-color: #ff6a3e;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid rgb(198, 51, 51);
+}
+
+.conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a3d0db;
+}/*# sourceMappingURL=styles.css.map */
