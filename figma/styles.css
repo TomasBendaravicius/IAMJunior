@@ -1,0 +1,112 @@
+.conteiner {
+  display: flex;
+  text-align: center;
+  flex-wrap: nowrap;
+  list-style: none;
+  justify-content: space-between;
+  padding-left: 320px;
+  padding-right: 320px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  box-sizing: border-box;
+}
+
+.box-2 {
+  text-align: center;
+  color: #F15A24;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 24px */
+  text-decoration: underline;
+}
+
+.box-1 {
+  width: 116px;
+  height: 37px;
+  color: var(--Main-Dark, #1A1A1A);
+  text-align: center;
+  /* Tablet/H2 */
+  font-family: Roboto Black;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  /* 37.2px */
+  text-align: left;
+}
+
+.box-7 {
+  display: flex;
+  height: auto;
+  padding: 16px 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 24px;
+  border: 1px solid var(--Hero-Primary, #F15A24);
+}
+
+.main-conteiner {
+  display: flex;
+  width: 100%;
+  max-width: 80rem;
+  margin: auto;
+  align-items: center;
+}
+
+.main-section {
+  overflow: hidden;
+  position: relative;
+  margin-top: 60px;
+}
+
+.conteiner-2 {
+  position: relative;
+  width: 100%;
+  max-width: 75rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nuotrauka1 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 52px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+  background: url(<path-to-image>) lightgray 50%/cover no-repeat;
+}
+
+.main-titel {
+  color: var(--Main-Dark, #1A1A1A);
+  width: 630px;
+  font-family: Roboto;
+  font-size: 61px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+}
+
+.main-mygtukas {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  height: auto;
+  width: 56px;
+  padding: 16px 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--Hero-Primary, #F15A24);
+}
+
+body {
+  box-sizing: border-box;
+}/*# sourceMappingURL=styles.css.map */
