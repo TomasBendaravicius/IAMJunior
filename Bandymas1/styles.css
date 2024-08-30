@@ -1,11 +1,15 @@
 * {
-  margin: 20;
+  margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin-left: 150px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .site-header {
@@ -17,6 +21,16 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 80rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 }
 
@@ -48,8 +62,11 @@ body {
 }
 
 .hero-image img {
-  width: 100%;
+  width: 1024px;
   height: 100%;
+  margin: 50px;
+  display: flex;
+  align-items: center;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 2.5rem;
@@ -77,6 +94,12 @@ body {
   flex-grow: 1;
 }
 
+#hero {
+  padding: var(--section-padding);
+  overflow: hidden;
+  position: relative;
+}
+
 .icon-picture {
   margin-bottom: 1.25rem;
 }
@@ -88,7 +111,7 @@ body {
 }
 
 .card-text {
-  font-size: 0.875rem 1.5vw 1rem;
+  font-size: 0.875rem, 1.5vw, 1rem;
   line-height: 1.5em;
   color: var(--body-text-color);
 }
@@ -98,4 +121,43 @@ body {
   line-height: 1.5em;
   margin: 0 0 0.75rem 0;
   color: var(--header-color);
+}
+
+.description {
+  font-size: var(--body-font-size);
+  line-height: 1.5em;
+  max-width: 40.625rem;
+  margin: 0 0 1rem 0;
+  color: var(--body-text-color);
+}
+
+.button-solid {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: clamp(22.875rem, 5.5vw, 3.5rem);
+  text-align: center;
+  text-decoration: none;
+  min-width: 9.375rem;
+  padding: 0 clamp(2rem, 4vw, 3rem);
+  color: var(--body-text-color-white);
+  display: inline-block;
+}
+
+.title {
+  font-size: var(--header-font-size);
+  font-weight: 900;
+  line-height: 1.2em;
+  color: var(--header-color);
+  max-width: 43.75rem;
+  margin: 0 0 1rem 0;
+}
+
+.content {
+  text-align: center;
+  width: 100%;
+  margin-bottom: clamp(2.5rem, 5vw, 3.25rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: clamp(1.93rem, 4vw, 3rem);
 }/*# sourceMappingURL=styles.css.map */
